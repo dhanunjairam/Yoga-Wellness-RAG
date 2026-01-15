@@ -32,7 +32,7 @@ User Query → Retriever (Hybrid Search + MMR) → Chatbot (Context-Only LLM) �
 ├── pyproject.toml # Dependencies
 ├── env_example.txt # Env vars template
 ├── uv.lock # UV lockfile
-│
+
 ├── src/
 │ ├── data/
 │ │ ├── markdown_data_pipeline.py # PDF → Markdown conversion
