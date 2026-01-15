@@ -38,18 +38,31 @@ User Query → Retriever (Hybrid Search + MMR) → Chatbot (Context-Only LLM) �
 ├── uv.lock # UV lockfile
 
 ├── src/
+
 │ ├── data/
+
 │ │ ├── markdown_data_pipeline.py # PDF → Markdown conversion
+
 │ │ ├── data_source/ # 📥 INPUT: Raw PDFs here
+
 │ │ └── markdown_data_sources/ # 📤 OUTPUT: Generated .md files
+
 │ ├── data_processing/
+
 │ │ ├── data_chunking_loading.py # Markdown → Pinecone ingestion
+
 │ │ └── check_pincone_index.py # List indexed files
+
 │ ├── data_retriver/
+
 │ │ └── data_pinecone_retriver.py # Hybrid search + MMR + metrics
+
 │ ├── llm/
+
 │ │ └── llm_file.py # Configurable ChatOpenAI + strict prompting
+
 │ └── evaluation/
+
 │ └── ragas_evaluation.py # Async RAGAS metrics (5 core metrics)
 
 
