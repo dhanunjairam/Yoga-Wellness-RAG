@@ -28,9 +28,13 @@ User Query → Retriever (Hybrid Search + MMR) → Chatbot (Context-Only LLM) �
 ## 📁 Project Structure
 
 ├── main.py # FastAPI app + endpoints
+
 ├── README.md
+
 ├── pyproject.toml # Dependencies
+
 ├── env_example.txt # Env vars template
+
 ├── uv.lock # UV lockfile
 
 ├── src/
